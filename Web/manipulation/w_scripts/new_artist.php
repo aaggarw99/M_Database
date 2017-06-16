@@ -27,4 +27,3 @@ if ($dbcon->query($sql) === TRUE) {
 mysqli_close($dbcon);
 
 ?>
-

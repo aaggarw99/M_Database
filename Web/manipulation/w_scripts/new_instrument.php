@@ -16,7 +16,7 @@ $year = $_POST["year"];
 
 if ($year < 0) {
 	exit("Please enter a year over 0 B.C.E");
-}  
+}
 if ($id < 0) {
 	exit("Please enter an ID over 0");
 }
