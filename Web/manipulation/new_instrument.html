@@ -1,0 +1,37 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Instrument</title>
+  </head>
+  <body>
+<h1>Register a new Instrument!</h1>
+        <a href="../final.html">Go Back to Final.html</a>
+        <form method="post" action="w_scripts/new_instrument.php">
+                <ul>
+                        <li>
+                                <input type="number" name="id" placeholder="Instrument ID" required></input>
+                        </li>
+                        <li>
+                                <input type="text" name="name" placeholder="Instrument Name" required></input>
+                        </li>
+			<label>Is this instrument electronic?</label>
+          <li>
+            <input type="radio" name="elec" value="1"> Yes <br>
+          </li>
+          <li>
+            <input type="radio" name="elec" value="2"> No<br>
+          </li>
+                        <li>
+                                <input type="text" name="inventor" placeholder="Inventor" required></input>
+                        </li>
+                        <li>
+                                <input type="number" name="year" placeholder="Year Created" required></input>
+                        </li>
+                        <li>
+                                <input type="submit" name="submit"></input>
+                        </li>
+                </ul>
+        </form>
+  </body>
+</html>

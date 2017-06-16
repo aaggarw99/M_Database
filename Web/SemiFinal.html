@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MPCS 53001 SemiFinal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <nav>
+    <ul>
+      <li>
+        <a href="SemiFinal.html">SemiFinal</a>
+	</li><li>
+	<a href="final.html">Final</a>
+      </li>
+    </ul>
+  </nav>
+
+  <body>
+    <div id = "wrapper">
+      <h3>The following functions are used to access an mySQL Database</h3>
+      <p>Find users with a given age</p>
+      <form method=get action="read/find_user_with_age.php">
+        <ul class="form-style-1">
+          <li>
+            <input type="number" name="age" placeholder="Age" required></input>
+          </li>
+          <li>
+            <input type="submit"></input>
+          </li>
+        </ul>
+
+      </form>
+      <hr>
+      <div id="form_link" >
+        <a href="read/list_10_users.php">List 10 users!</a>
+
+      </div>
+      <hr>
+      <p>
+        Find users with a certain hours weekly and location.
+      </p>
+      <form method=get action="read/find_users_18_hours_country.php">
+        <ul class="form-style-1">
+          <li>
+            <input type="number" name="hours" placeholder ="Hours Weekly" required></input>
+          </li>
+          <li>
+            <input type="text" name="country" placeholder = "Country" required></input>
+          </li>
+          <li>
+            <input type="submit"></input>
+          </li>
+        </ul>
+      </form>
+      <hr>
+      <p>Count the amount of users in the database.</p>
+      <div id="form_link">
+        <a href="read/count_amount_of_users.php">Amount of Users!</a>
+      </div>
+      <hr>
+      <p>Count the amount of instruments created between the given years!</p>
+      <form method="get" action="read/count_amount_of_instruments.php">
+        <ul class="form-style-1">
+            <li>
+              <input type="radio" name="year" value="1"> 1700-1800 yr<br>
+            </li>
+            <li>
+              <input type="radio" name="year" value="2"> 1800-1900 yr<br>
+            </li>
+            <li>
+              <input type="radio" name="year" value="3"> 1900-2000 yr <br>
+            </li>
+            <li>
+              <input type="submit" value="Enter"></input>
+            </li>
+        </ul>
+      </form>
+      <hr>
+
+      <p>Select an item where you'd like to see the average age/year created</p>
+
+      <form method="get" action="read/get_avg_age_year.php">
+        <ul class="form-style-1">
+          <li>
+            <select name="avg_dropdown">
+                    <option value="user">Users</option>
+                    <option value="fav_artist">Favorite Artists</option>
+                    <option value="instrument">Instrument</option>
+            </select>
+          </li>
+          <li>
+            <input type="Submit"></input>
+
+          </li>
+
+        </ul>
+
+      </form>
+      <hr>
+      <p>Does is your instrument electronic? Let's see how many daws are available or not available for you.</p>
+      <form method="get" action="read/check_daw_compatible.php">
+        <ul class="form-style-1">
+          <li>
+            <input type="radio" name="elec" value="1"> Yes <br>
+          </li>
+          <li>
+            <input type="radio" name="elec" value="2"> No<br>
+          </li>
+          <li>
+            <input type="submit" value="Enter"></input>
+          </li>
+        </ul>
+      </form>
+      <hr>
+      <p>Select which computers you have to see what daws work for you!</p>
+      <form method="get" action="read/get_daw_computer_type.php">
+        <ul class="form-style-1">
+          <li>
+            <input type="checkbox" name="mac" value="check">MacOS</input><br>
+
+          </li>
+          <li>
+            <input type="checkbox" name = "window" value="check">WindowsOS</input><br>
+
+          </li>
+          <li>
+            <input type="checkbox" name = "other" value="check">OtherOS</input><br>
+
+          </li>
+          <li>
+            <input type="Submit"></input>
+
+          </li>
+        </ul>
+      </form>
+    </div>
+
+  </body>
+  <footer>
+    <b>By Ashwin Aggarwal (CNET: ashwina)</b>
+  </footer>
+</html>
